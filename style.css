@@ -719,6 +719,10 @@ select{
     gap: 2rem;
 }
 
+.product-cart-grid p{
+    margin-top: 0;
+}
+
 .product-cart-grid img{
     height: 100%;
 }
