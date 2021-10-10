@@ -507,13 +507,32 @@ textarea{
 
 /* Product */
 
+
 .product-wrapper{
     padding: 2rem;
 }
 
+.product-specific-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:1rem;
+}
+
+.product-grid-left{
+    display: grid;
+    place-items: center;
+    gap:1rem;
+}
+
+.product-grid-right{
+    display: grid;
+    justify-content: center;
+}
+
 .product-images-grid{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap:0.5rem;
 }
 
 .product-img-div{
@@ -531,3 +550,236 @@ textarea{
     display: flex;
     gap: 2rem;
 }
+
+.color-radio input[type="radio"]{
+    display: none;
+}
+
+.color-radio label{
+    display: flex;
+    gap:1rem;
+    color: white;
+}
+
+.color-radio span{
+    width: 12px;
+    height: 12px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 44px;
+    padding: 0.2rem;
+}
+
+.color-radio img{
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+
+#red + label span{
+    background-color: #b81938;
+}
+#green + label span{
+    background-color: #2c4a38;
+}
+#blue + label span{
+    background-color: #296085;
+}
+#yellow + label span{
+    background-color: #73163d;;
+}
+
+:checked + label span img {
+    opacity: 1;
+}
+
+.row label span{
+    background-color: #994c6d54;
+}
+
+.row{
+    display:grid;
+    gap:0.5rem;
+}
+
+hr{
+    width:100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.product-info{
+    display: grid;
+    gap: 1rem;
+}
+
+.product-info h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+.product-specific-grid p{
+    margin:0;
+}
+
+.product-grid-right{
+    display: grid;
+    gap: 3rem;;
+}
+
+.engrave-div h3, .engrave-div p, .engrave-div input{
+    margin: 0;
+}
+
+.engrave-div input{
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.quantity-adder{
+    display: flex;
+    gap:1rem;
+    margin-top: 1rem;
+}
+
+
+.quantity-adder div{
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(99 79 86);
+    border-radius:50%;
+}
+
+.reviews-div textarea{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Cart */
+
+.product-cart-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+}
+
+.cart-wrapper{
+    display: grid;
+    place-items: center;
+}
+
+
+
+.cart-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 2rem;
+}
+
+
+
+#cart-top {
+	margin: 0 auto;
+	width: fit-content;
+	margin-top: 1rem;
+}
+
+
+table {
+    padding: 2rem;
+    border-collapse: collapse;
+	/*padding-top: 0px;
+	margin-left: 100px;
+	margin-bottom: 40px;
+	margin-top: 70px;*/
+	background-color: rgb(131 96 111);
+	/*padding: 20px;*/
+	border-radius: 10px;
+}
+
+td {
+	padding: 1rem;
+    vertical-align: top;
+
+}
+
+th {
+	/*padding-left: 20px;
+    padding-top: 5px;
+	padding-bottom: 5px;*/
+    text-align: left;
+    padding: 1rem;
+	border-top: solid gray 1.5px;
+	border-bottom: solid gray 1.5px;
+	border-spacing: 2rem 2rem;
+}
+
+#chosenProduct {
+	height: 100px;
+	width: 100px;
+	border-style: solid;
+}
+
+#cartProductInfo {
+	width: 150px;
+	font-size: 11px;
+	line-height: 1.2;
+	margin-right: 40px;
+}
+
+
+
+
+
+
+
+#back {
+	margin-left: 100px;
+	padding: 10px;
+	background-color: rgb(230, 230, 230);
+	border-radius: 5px;
+}
+
+#back:hover {
+	color: rgb(77, 83, 83);
+	background-color: rgb(202, 202, 202);
+}
+
+
+
+#cartRight {
+	text-align: center;
+	/*border-style: solid;
+	border-color: gray;
+	border-width: 1.5px; */
+	width: 300px;
+	height: 350px;
+	position: absolute;
+	top: 210px;
+	left: 750px;
+	background-color: black;
+	border-radius: 10px;
+	padding-top: 20px;
+}
+
+#checkout {
+	text-align: center;	
+	padding: 10px;
+	background-color: rgb(230, 230, 230);
+	border-radius: 5px;
+}
+
+#checkout:hover {
+	color: rgb(77, 83, 83);
+	background-color: rgb(202, 202, 202);
+}
+
