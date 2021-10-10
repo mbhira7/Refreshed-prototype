@@ -57,7 +57,7 @@ body {
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
 	color:white;
-    background-color: #8f8085;
+    background-color: #897b80;
     position: relative;
     overflow-x: hidden;
 }
@@ -603,7 +603,7 @@ textarea{
 }
 
 .row label span{
-    background-color: #994c6d54;
+    background-color: rgb(99 79 86);
 }
 
 .row{
@@ -699,7 +699,7 @@ hr{
 
 
 .order-box{
-    background-color: rgb(165 150 155);
+    background-color: rgb(125 109 115);
     padding: 2rem;
     border-radius: 0.2rem;
 }
@@ -748,7 +748,7 @@ select{
 table {
     padding: 2rem;
     border-collapse: collapse;
-	background-color: rgb(165 150 155);
+	background-color: rgb(125 109 115);
 	border-radius: 0.5rem;
 }
 
