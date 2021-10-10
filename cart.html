@@ -35,36 +35,82 @@
     </header> 
 
     <div class="cart-wrapper">
-    <h1 id="cart-top">Shopping cart</h1>
-    <div class="cart-grid">
+        <h1 id="cart-top">Shopping cart</h1>
+        <div class="cart-grid">
+            <div>
+                <table>
+                    <tr>
+                        <th>Product details</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        
+                        <td class="product-cart-grid"> 
+                            <img src="img/produkt.jpeg">
+                            
+                            <div>
+                                Product name <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Praesent sit amet sem vel lacus dictum gravida sed in metus. 
+                                Interdum et malesuada fames ac ante ipsum primis
+    
+                                <div class="grid-edit">
+                                    <p>Remove</p>
+                                    <p>Edit</p>
+                                </div>
+                            </div>
+                           
+                            
+                        </td>
+                        <td>2</td>
+                        <td>$75</td>
+                        <td>$150</td>
+                    </tr>
+                </table>
 
-    <table>
-        <tr>
-            <th>Product details</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Total</th>
-        </tr>
-        <tr>
-            
-            <td class="product-cart-grid"> 
-                <img src="img/produkt.jpeg">
-                Product name <br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-				Praesent sit amet sem vel lacus dictum gravida sed in metus. 
-				Interdum et malesuada fames ac ante ipsum primis
-            </td>
-            <td>2</td>
-            <td>$75</td>
-            <td>$150</td>
-        </tr>
+                <button type="button">CONTINUE SHOPPING</button>
 
-       
-    </table>
+            </div>  
 
-   
+            <div class="order-box">
+                <p>Order summary</p>
+                <hr>
+                <div class="order-grid">
+                    <div class="flex">
+                        <p>Product x 2</p>
+                        <p class="margin-left-auto">$150</p>
+                    
+                    </div>
+                    
+                    <p>Shipping</p>
+                        <select>
+                            <option value="volvo">Standard shipping - $10</option>
+                            <option value="volvo">Express shipping - $30</option>
+                        </select>
+                        <hr>
+                    
+                        <div class="flex">
+                            <p>Promo code</p>
+                            <p class="margin-left-auto pointer">+</p>
+                        
+                        </div>
 
-    </div>
+                        <div class="flex">
+                            <p>Total cost</p>
+                            <p class="margin-left-auto">$160</p>
+                        </div>
+
+                        <button type="button">CHECKOUT</button>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+    
     
     <!--<a id="back" href="">Continue shopping</a>
     <div id="cartRight">
