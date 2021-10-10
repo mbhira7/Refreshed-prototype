@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Products</title>
+    	<link href="./style.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/8823a292b7.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="img-link" href="./index.html">
+                <figure class="img-container">
+                    <img src="./img/logo.svg" alt="Logo">
+                </figure>
+            </a>
+            <div class="nav-middle">
+                <a href="./index.html">Home</a>
+                <a href="./products.html" >Products</a>
+                <a href="./contact-us.html">Contact</a>
+            </div>
+            
+            <div class="nav-right">
+                <a href="#" >
+                    <span class="fas fa-search fa-fw"></span>  
+                </a>
+                <a href="./cart.html" >
+                    <span class="fas fa-shopping-cart"></span>
+                </a>
+            </div>
+        </nav>
+    </header>  
+
+    <div class="checkout-wrapper">
+        <h1 class="text-center">Billing information</h1>
+
+        <div class="checkout-grid">
+            <div class="checkout-left">
+                <div class="flex gap">
+                    <div class="grid">
+                        <label for="firstname">First name</label>
+                        <input type="text" placeholder="&#xf007; First name" id="firstname" style="font-family:FontAwesome" />
+                    </div>
+                    
+                    <div class="grid">
+                        <label for="lastname">Last name</label>
+                        <input type="text" placeholder="&#xf007; Last name" id="lastname" style="font-family:FontAwesome" />    
+                    </div>
+                    
+                </div>
+
+                <div class="grid">
+                    <label for="address">Address</label>
+                    <input type="text" placeholder="&#xf2b9; Address" id="address" style="font-family:FontAwesome" />    
+                </div>
+
+                <div class="flex gap">
+                    <div class="grid">
+                        <label for="zip">Zip code</label>
+                        <input type="text" placeholder="&#xf3c5; Zip code" id="zip" style="font-family:FontAwesome" />
+                    </div>
+                    
+                    <div class="grid">
+                        <label for="city">City</label>
+                        <input type="text" placeholder="&#xf3c5; City" id="city" style="font-family:FontAwesome" />    
+                    </div>
+
+                    
+                    
+                </div>
+
+                <div>
+                    <select>
+                        <option value="volvo">Choose your country</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Choose your payment method</p>
+
+                    <div class="payment flex gap1rem">
+                        <div class="container50px pointer"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Visa_2021.svg"></div>
+                        <div class="container50px pointer"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg"></div>
+                        <div class="container50px pointer"><img src="./img/vipps.png"></div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="checkout-right flex gap">
+                <div>
+                    <p>Product name x 2</p>
+                    <p>Shipping</p>
+                    <p>Total cost</p>
+                </div>
+
+                <div class="margin-left-auto">
+                    <p>$150</p>
+                    <p>$10</p>
+                    <p>$160</p>
+                </div>
+                
+            </div>
+
+            
+        </div>
+
+        
+
+       
+    </div>
+
+   
+    
+    
+    <script src='./index.js'></script>
+</body>
+</html>
