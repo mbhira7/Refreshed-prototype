@@ -827,6 +827,10 @@ th {
 
 .checkout-right{
     padding: 0.5rem;
+    
+}
+
+.border-box{
     border: 2px solid white;
 }
 
