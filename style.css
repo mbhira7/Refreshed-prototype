@@ -48,6 +48,7 @@ html{
    --top-spacing: 80px;
   scroll-padding-top: var(--top-spacing);
   margin: var(--top-spacing) auto 0 auto;
+
 }
 
 body {
@@ -57,6 +58,8 @@ body {
     font-family: 'Playfair Display', serif;
 	color:white;
     background-color: #8a707b;
+    position: relative;
+    overflow-x: hidden;
 }
 
 h1,h2,figure{
@@ -411,7 +414,7 @@ position: absolute;
 
 .contact-form-grid{
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
@@ -441,6 +444,7 @@ input, textarea{
     border-radius: 4px;
     padding: 1rem;
     outline: none;
+    max-width: 100%;
 
 }
 
@@ -663,6 +667,12 @@ hr{
     height: 100%;
 }
 
+@media only screen and (max-width: 850px){
+    .product-grid-right input, .product-grid-right textarea{
+        width: 80%;
+    }
+}
+
 
 /* Cart */
 
@@ -718,7 +728,6 @@ th {
 	padding-bottom: 5px;*/
     text-align: left;
     padding: 1rem;
-	border-top: solid gray 1.5px;
 	border-bottom: solid gray 1.5px;
 	border-spacing: 2rem 2rem;
 }
