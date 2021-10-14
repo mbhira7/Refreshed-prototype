@@ -1,120 +1,116 @@
 <!DOCTYPE html>
 <html lang="no">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Refreshed</title>
-    <script src="https://kit.fontawesome.com/8823a292b7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <a class="img-link" href="./index.html">
-                <figure class="img-container">
-                    <img src="./img/logo.svg" alt="Logo">
-                </figure>
-            </a>
-            <div class="nav-middle">
-                <a href="./index.html" >Home</a>
-                <a href="./products.html" >Products</a>
-                <a href="./contact-us.html">Contact</a>
-            </div>
-            
-            <div class="nav-right">
-                <a href="#" >
-                    <span class="fas fa-search fa-fw"></span>  
-                </a>
-                <a href="./cart.html" >
-                    <span class="fas fa-shopping-cart"></span>
-                </a>
-            </div>
-        </nav>
-    </header> 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Refreshed</title>
+		<script>
+			src = "https://kit.fontawesome.com/8823a292b7.js";
+			crossorigin = "anonymous";
+		</script>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a class="img-link" href="./index.html">
+					<figure class="img-container">
+						<img src="./img/logo.svg" alt="Logo" />
+					</figure>
+				</a>
+				<div class="nav-middle">
+					<a href="./index.html">Home</a>
+					<a href="./products.html">Products</a>
+					<a href="./about.html">About</a>
+					<a href="./contact-us.html">Contact</a>
+				</div>
 
-    <div class="cart-wrapper">
-        <h1 id="cart-top">Shopping cart</h1>
-        <div class="cart-grid">
-            <div>
-                <table>
-                    <tr>
-                        <th><strong>Product details</strong></th>
-                        <th><strong>Quantity</strong></th>
-                        <th><strong>Price</strong></th>
-                        <th><strong>Total</strong></th>
-                    </tr>
-                    <tr>
-                        
-                        <td class="product-cart-grid"> 
-                            <img src="img/produkt.jpeg">
-                            
-                            <div>
-                                <p><strong>Product name</strong></p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Praesent sit amet sem vel lacus dictum gravida sed in metus. 
-                                Interdum et malesuada fames ac ante ipsum primis
-    
-                                <div class="grid-edit">
-                                    <p>Remove</p>
-                                    <p>Edit</p>
-                                </div>
-                            </div>
-                           
-                            
-                        </td>
-                        <td>2</td>
-                        <td>$75</td>
-                        <td>$150</td>
-                    </tr>
-                </table>
+				<div class="nav-right">
+					<a href="#">
+						<span class="fas fa-search fa-fw"></span>
+					</a>
+					<a href="./cart.html">
+						<span class="fas fa-shopping-cart"></span>
+					</a>
+				</div>
+			</nav>
+		</header>
 
-                <button type="button">CONTINUE SHOPPING</button>
+		<div class="cart-wrapper">
+			<h1 id="cart-top">Shopping cart</h1>
+			<div class="cart-grid">
+				<div>
+					<table>
+						<tr>
+							<th><strong>Product details</strong></th>
+							<th><strong>Quantity</strong></th>
+							<th><strong>Price</strong></th>
+							<th><strong>Total</strong></th>
+						</tr>
+						<tr>
+							<td class="product-cart-grid">
+								<img src="img/produkt.jpeg" />
 
-            </div>  
+								<div>
+									<p><strong>Product name</strong></p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
+									amet sem vel lacus dictum gravida sed in metus. Interdum et malesuada
+									fames ac ante ipsum primis
 
-            <div class="order-box">
-                <p>Order summary</p>
-                <hr>
-                <div class="order-grid">
-                    <div class="flex">
-                        <p>Product x 2</p>
-                        <p class="margin-left-auto">$150</p>
-                    
-                    </div>
-                    
-                    <p>Shipping</p>
-                        <select>
-                            <option value="volvo">Standard shipping - $10</option>
-                            <option value="volvo">Express shipping - $30</option>
-                        </select>
-                        <hr>
-                    
-                        <div class="flex">
-                            <p>Promo code</p>
-                            <p class="margin-left-auto pointer">+</p>
-                        
-                        </div>
+									<div class="grid-edit">
+										<p>Remove</p>
+										<p>Edit</p>
+									</div>
+								</div>
+							</td>
+							<td>2</td>
+							<td>$75</td>
+							<td>$150</td>
+						</tr>
+					</table>
 
-                        <div class="flex">
-                            <p>Total cost</p>
-                            <p class="margin-left-auto">$160</p>
-                        </div>
+					<button type="button">CONTINUE SHOPPING</button>
+				</div>
 
-                        <a href="./checkout.html">
-                            <button type="button">CHECKOUT</button>
-                        </a>
+				<div class="order-box">
+					<p>Order summary</p>
+					<hr />
+					<div class="order-grid">
+						<div class="flex">
+							<p>Product x 2</p>
+							<p class="margin-left-auto">$150</p>
+						</div>
 
-                </div>
-                
-            </div>
+						<p>Shipping</p>
+						<select>
+							<option value="volvo">Standard shipping - $10</option>
+							<option value="volvo">Express shipping - $30</option>
+						</select>
+						<hr />
 
-        </div>
+						<div class="flex">
+							<p>Promo code</p>
+							<p class="margin-left-auto pointer">+</p>
+						</div>
 
-    
-    
-    <!--<a id="back" href="">Continue shopping</a>
+						<div class="flex">
+							<p>Total cost</p>
+							<p class="margin-left-auto">$160</p>
+						</div>
+
+						<a href="./checkout.html">
+							<button type="button">CHECKOUT</button>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!--<a id="back" href="">Continue shopping</a>
     <div id="cartRight">
         <h2>Order summary</h2>
         <p>Product x2</p>
@@ -129,9 +125,6 @@
         <p>Total cost: $150</p>
         <a id="checkout" href="">Checkout</a>
     </div>-->
-
-    </div>
-    
-
-</body>
+		</div>
+	</body>
 </html>
