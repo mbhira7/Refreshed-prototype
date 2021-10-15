@@ -55,7 +55,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Playfair Display", serif;
-	color: white;
+	color: rgb(255, 255, 255);
 	background-color: #897b80;
 	position: relative;
 	overflow-x: hidden;
@@ -191,6 +191,7 @@ button {
 	display: grid;
 	place-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  color:#af9ba2
 }
 
 .home-left {
