@@ -191,7 +191,7 @@ button {
 	display: grid;
 	place-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  color:#af9ba2
+	color: #af9ba2;
 }
 
 .home-left {
@@ -837,5 +837,5 @@ hr {
 #info-button {
 	text-align: center;
 	position: absolute;
-  margin-top: 36%;
+	margin-top: 36%;
 }
