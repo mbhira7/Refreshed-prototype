@@ -78,6 +78,7 @@ p{
 }
 
 .p1{
+    position: relative;
     display: grid;
     place-items: center;
 }
@@ -104,7 +105,7 @@ p{
 
 header{
     position: relative;
-    z-index: 3;
+    z-index: 20;
     display: grid;
     font-family: 'Marcellus', sans-serif;
     font-weight: 500;
@@ -173,15 +174,18 @@ button{
 }
 
 .home-div{
-    width: 100%;
-    margin: auto;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
 }
 
-
 .home-left{
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    margin-left: 50px;
     background-color: rgba(0,0,0,0.3);
     box-shadow: rgb(0 0 0 / 25%) 0px 5px 15px;
 }
@@ -394,7 +398,6 @@ position: absolute;
 .contact-wrapper{
     padding: 2rem;
     position: relative;
-    z-index: -300;
 }
 
 .contact-grid{
@@ -464,7 +467,6 @@ textarea{
     padding:2rem;
     padding: 2rem;
     position: relative;
-    z-index: -300;
 }
 
 .product-grid{
@@ -876,7 +878,7 @@ hr{
         grid-template-rows: 4px 4px 4px;
         align-content: space-between;
         cursor: pointer;  
-        z-index: 5;  
+        z-index: 25;
     }
     
     
@@ -905,6 +907,7 @@ hr{
         right: 0;
         top: -800px;
         transition: 0.9s;
+        z-index: 15;
     }
     
     #menu a {
@@ -1007,6 +1010,20 @@ hr{
     transform: translateY(-14px) rotate(-45deg);
 }*/
 
+.slide-arrow-div{
+    position: absolute;
+    padding: 0 1rem;
+    background: transparent;
+}
+
+#left{
+    left: 0;
+}
+
+#right{
+    right: 0;
+}
+
 @media only screen and (max-width: 900px){
     .values-grid{
         grid-template-columns: repeat(2, 1fr);
@@ -1037,9 +1054,19 @@ hr{
         height: 1px;
         margin: auto;
     }
+
+    .home-left{
+        width: 70%;
+    }
+
     
+
 }
 
-
+@media only screen and (max-width: 700px){
+    .p1{
+        background-position: top 50% right 15%;
+    }
+}
 
 
