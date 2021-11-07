@@ -42,7 +42,7 @@ const slideshow = (p) => {
       
       p1.style.backgroundImage = `linear-gradient(to bottom, rgb(86 79 95 / 64%),rgb(79 30 83 / 39%)),
       url(${bakgrunn})`;  
-
+    
       productName.innerHTML = bilder[i].tittel
       productDescription.innerHTML = bilder[i].beskrivelse
       
