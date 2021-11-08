@@ -19,8 +19,8 @@ for(let i=0; i<memberCard.length; i++){
 
 
 const bilder = [
-    {"bilde": "./img/bulb.jpeg", "tittel": "Rise light module", "beskrivelse":"Tired of waking up in a pitch black room? Connect your Rise Modular Alarm Clock to your room lights with this module. When your clock rings, the lights automatically turn on, helping your brain wake up."},
-    {"bilde": "./img/clock3.jpeg", "tittel": "Rise alarm clock", "beskrivelse":"The Rise Modular Alarm Clock is designed to make the process of waking up more comfortable, while being customizable to the customer’s needs. Choose between several modules (sold separately) to connect to the clock to tailor the morning experience just for you."}
+    {"bilde": "./img/product2_liggende.jpg", "tittel": "Rise light module", "beskrivelse":"Tired of waking up in a pitch black room? Connect your Rise Modular Alarm Clock to your room lights with this module. When your clock rings, the lights automatically turn on, helping your brain wake up."},
+    {"bilde": "./img/product1_liggende.jpeg", "tittel": "Rise alarm clock", "beskrivelse":"The Rise Modular Alarm Clock is designed to make the process of waking up more comfortable, while being customizable to the customer’s needs. Choose between several modules (sold separately) to connect to the clock to tailor the morning experience just for you."}
 ];
 
 
@@ -42,7 +42,7 @@ const slideshow = (p) => {
       
       p1.style.backgroundImage = `linear-gradient(to bottom, rgb(86 79 95 / 64%),rgb(79 30 83 / 39%)),
       url(${bakgrunn})`;  
-    
+      
       productName.innerHTML = bilder[i].tittel
       productDescription.innerHTML = bilder[i].beskrivelse
       

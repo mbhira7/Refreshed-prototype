@@ -71,7 +71,7 @@ p{
     width:100vw;
     min-height: calc(100vh - 80px); 
 	background-image: linear-gradient(to bottom, rgb(86 79 95 / 64%),rgb(79 30 83 / 39%)),
-    url(img/clock3.jpeg);
+    url(img/product1_liggende.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -81,6 +81,7 @@ p{
     position: relative;
     display: grid;
     place-items: center;
+    background-position: 50% 30%;
 }
 
 .content {
@@ -246,16 +247,6 @@ button{
     background-color: rgb(226, 226, 226);
 }
 
-.team-top{
-    display: grid;
-    grid-template-columns: repeat(2,200px);
-}
-
-.team-bottom{
-    display: grid;
-    grid-template-columns: repeat(3,200px);
-}
-
 
 .about-div{
     display: grid;
@@ -324,14 +315,14 @@ position: absolute;
 .team-top{
     display: grid;
     gap:2rem;
-    grid-template-columns: repeat(2,minmax(170px,220px));
+    grid-template-columns: repeat(2,minmax(180px,210px));
     margin:auto;
 }
 
 .team-bottom{
     display: grid;
     gap:2rem;
-    grid-template-columns: repeat(3,minmax(170px,220px));
+    grid-template-columns: repeat(3,minmax(180px,210px));
     margin:auto;
     margin-bottom: 2rem;
 }
