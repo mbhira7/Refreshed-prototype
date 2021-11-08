@@ -388,13 +388,14 @@ position: absolute;
 /*Contact us*/
 
 .contact-wrapper{
-    padding: 2rem;
+    padding: 1rem 2rem;
+    margin: auto;
     position: relative;
 }
 
 .contact-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-template-columns: repeat(2,1fr);
     gap: 5rem;
     margin-top: 2rem;
 }
@@ -445,7 +446,7 @@ input, textarea{
 
 textarea{
     resize: none;
-    min-height: 47%;
+    min-height: 35%;
 }
 
 .google-div{
@@ -791,6 +792,7 @@ th {
 
 .grid{
     display: grid;
+    gap: 0.3rem;
 }
 
 .gap{
@@ -828,6 +830,11 @@ th {
 
 hr{
     width: 100%;
+}
+
+#msg-label{
+    margin-top: 0.8rem;
+    line-height: 0.3rem;
 }
 
 @media only screen and (max-width: 950px){
@@ -1078,13 +1085,35 @@ hr{
         width: 70%;
     }
 
-    
+    .contact-form-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-left{
+        margin-top:4rem;
+    }
 
 }
 
 @media only screen and (max-width: 700px){
     .p1{
         background-position: top 50% right 15%;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    input,textarea{
+        max-width: 70%;
+    }
+
+    .contact-right, .contact-form-grid{
+        place-items: center;
     }
 }
 

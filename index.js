@@ -5,6 +5,7 @@ const memberCard = document.querySelectorAll(".member-card");
 const memberText = document.querySelectorAll(".member-text");
 const productName = document.querySelector(".product-navn")
 const productDescription = document.querySelector(".product-beskrivelse")
+const form = document.querySelector(".contact-right")
 
 for(let i=0; i<memberCard.length; i++){
     
@@ -128,4 +129,9 @@ leftArrow.onclick = () => {
 
 rightArrow.onclick = () => {
     nextMovie()
+}
+
+
+form.onsubmit = () => {
+    alert("hh")
 }
