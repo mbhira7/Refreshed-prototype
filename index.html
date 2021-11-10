@@ -59,7 +59,7 @@
             
                
                 <div>
-                    <h1 class="product-navn">Rise alarm clock</h1>
+                    <h1 class="product-navn">Rise - Our newest collection</h1>
                     <p class="product-beskrivelse">
                         The Rise Modular Alarm Clock is designed to make the process of waking up more comfortable, 
 						while being customizable to the customer’s needs. Choose between several modules (sold separately) 
@@ -94,8 +94,9 @@
         const productDescription = document.querySelector(".product-beskrivelse")
 
         const bilder = [
-        {"bilde": "./img/product2.png", "tittel": "Rise light module", "beskrivelse":"Tired of waking up in a pitch black room? Connect your Rise Modular Alarm Clock to your room lights with this module. When your clock rings, the lights automatically turn on, helping your brain wake up."},
-        {"bilde": "./img/product1.png", "tittel": "Rise alarm clock", "beskrivelse":"The Rise Modular Alarm Clock is designed to make the process of waking up more comfortable, while being customizable to the customer’s needs. Choose between several modules (sold separately) to connect to the clock to tailor the morning experience just for you."}
+        {"bilde": "./img/product2.png", "tittel": "Rise - add ons ", "beskrivelse":"Rise will in the future come up with different add-ons that fit exactly your needs. They are both simple and of more advanced nature. Like for example vibration plates, fans, smart light set up and sound system."},
+        {"bilde": "./img/product1.png", "tittel": "Rise - our newest collection", "beskrivelse":"The Rise Modular Alarm Clock is designed to make the process of waking up more comfortable, while being customizable to the customer’s needs. Choose between several modules (sold separately) to connect to the clock to tailor the morning experience just for you."}
+        
         ];
 
 
@@ -198,7 +199,7 @@
             interval = clearInterval(interval)
         }
 
-        interval = setInterval(slideshow, 3000)
+        interval = setInterval(slideshow, 5000)
 
         leftArrow.onclick = () => {
             nextMovie("previous")
