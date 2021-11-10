@@ -51,6 +51,9 @@
         
     
         <div class="home-div">
+            <div class="slide-img-container">
+                <img class="produktbilde" src="img/product1.png">
+            </div>
 
             <div class="home-left">
             
@@ -64,15 +67,17 @@
                         
                     </p>
                     <a href="./products.html">
-                        <button type="button">SHOP NOW</button>
+                        <button type="button">LEARN MORE</button>
                     </a>
                 </div>
                 
             </div>
 
 
+
         </div>
 
+            
         <button class="slide-arrow-div" id="right" >
             <i class="fas fa-chevron-right"></i>
         </button>
@@ -81,15 +86,16 @@
 
     <script src="./index.js"></script>
     <script>
-        const p1 = document.querySelector(".p1");
+        const p1 = document.querySelector(".p1")
+        const produktContainer = document.querySelector(".produktbilde");
         const leftArrow = document.querySelector("#left");
         const rightArrow = document.querySelector("#right");
         const productName = document.querySelector(".product-navn")
         const productDescription = document.querySelector(".product-beskrivelse")
 
         const bilder = [
-        {"bilde": "./img/product2_liggende.jpg", "tittel": "Rise light module", "beskrivelse":"Tired of waking up in a pitch black room? Connect your Rise Modular Alarm Clock to your room lights with this module. When your clock rings, the lights automatically turn on, helping your brain wake up."},
-        {"bilde": "./img/product1_liggende.jpeg", "tittel": "Rise alarm clock", "beskrivelse":"The Rise Modular Alarm Clock is designed to make the process of waking up more comfortable, while being customizable to the customer’s needs. Choose between several modules (sold separately) to connect to the clock to tailor the morning experience just for you."}
+        {"bilde": "./img/product2.png", "tittel": "Rise light module", "beskrivelse":"Tired of waking up in a pitch black room? Connect your Rise Modular Alarm Clock to your room lights with this module. When your clock rings, the lights automatically turn on, helping your brain wake up."},
+        {"bilde": "./img/product1.png", "tittel": "Rise alarm clock", "beskrivelse":"The Rise Modular Alarm Clock is designed to make the process of waking up more comfortable, while being customizable to the customer’s needs. Choose between several modules (sold separately) to connect to the clock to tailor the morning experience just for you."}
         ];
 
 
@@ -109,11 +115,14 @@
             const bakgrunn = bilder[i].bilde;
             
             
-            p1.style.backgroundImage = `linear-gradient(to bottom, rgb(86 79 95 / 64%),rgb(79 30 83 / 39%)),
-            url(${bakgrunn})`;  
-            
+            //p1.style.backgroundImage = `linear-gradient(to bottom, rgb(86 79 95 / 64%),rgb(79 30 83 / 39%)),
+            //url(${bakgrunn})`;  
+
+            produktContainer.src = bakgrunn
             productName.innerHTML = bilder[i].tittel
             productDescription.innerHTML = bilder[i].beskrivelse
+            
+            
             
             i++;
             

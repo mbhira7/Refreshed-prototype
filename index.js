@@ -2,18 +2,6 @@ const memberCard = document.querySelectorAll(".member-card");
 const memberText = document.querySelectorAll(".member-text");
 const cb = document.querySelector("#cb");
 
-for(let i=0; i<memberCard.length; i++){
-    
-    memberCard[i].onmouseover = () => {
-        memberText[i].style.display = "block";
-    }
-    memberCard[i].onmouseleave = () => {
-        
-        memberText[i].style.display = "none";
-    }
-}
-
-
 window.onresize = () => {
     if(window.innerWidth > 600){
         cb.checked = false;
