@@ -70,7 +70,7 @@ p{
 .para {
     width:100vw;
     min-height: calc(100vh - 80px); 
-	/*background-image: linear-gradient(to bottom, rgb(86 79 95 / 64%),rgb(79 30 83 / 39%)),
+    /*background-image: linear-gradient(to bottom, rgb(86 79 95 / 64%),rgb(79 30 83 / 39%)),
     url(img/bakgrunn.png);*/
     background-size: cover;
     background-position: center;
@@ -862,9 +862,6 @@ hr{
     line-height: 0.3rem;
 }
 
-#logo-img{
-    filter: invert(1);
-}
 
 @media only screen and (max-width: 950px){
     .checkout-grid{
