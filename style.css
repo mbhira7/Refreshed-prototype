@@ -160,6 +160,7 @@ img{
 
 .img-link{
     display: flex;
+    width: 70px;
 }
 
 .nav-right{
@@ -933,8 +934,8 @@ hr{
         align-content: space-evenly;
         position: absolute;
         right: 0;
-        top: -800px;
-        transition: 0.9s;
+        top: -1000px;
+        transition: 1.3s;
         z-index: 15;
     }
     
