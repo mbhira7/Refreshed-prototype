@@ -1198,7 +1198,7 @@ hr{
 .flyTxt{
     animation: flyInTxt 1.5s forwards;
     animation-delay: 0s;
-    transform: translateY(-300px);
+    transform: translateY(-600px);
 }
 
 @keyframes flyInTxt {
