@@ -44,45 +44,35 @@
 
     
     
-   <section class="para p1" id="home">
-        <button id="left" class="slide-arrow-div">
-            <i class="fas fa-chevron-left"></i>
-        </button>
+        <section class="para p1" id="home" style="background-image: linear-gradient(rgba(86, 79, 95, 0.64), rgba(79, 30, 83, 0.39)), url(./img/slide1.png);">
+            <button id="left" class="slide-arrow-div">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            
         
+            <div class="home-div">
     
-        <div class="home-div">
-            <div class="slide-img-container">
-                <img class="produktbilde" src="img/product1.png" alt="Product image of The Rise modular alarm clock">
-            </div>
-
-            <div class="home-left">
-            
-               
-                <div>
-                    <h1 class="product-navn">Rise - Our newest collection</h1>
-                    <p class="product-beskrivelse">
-                        The Rise Modular Alarm Clock is designed to make the process of waking up more comfortable, 
-						while being customizable to the customer’s needs. Choose between several modules (sold separately) 
-						to connect to the clock to tailor the morning experience just for you.
-                        
-                    </p>
-                    <a href="./products.html">
-                        <button type="button">LEARN MORE</button>
-                    </a>
-                </div>
+                <div class="home-left">
                 
+                   
+                    <div>
+                        <h1 class="product-navn">Rise - our newest collection</h1>
+                        <p class="product-beskrivelse">The Rise Modular Alarm Clock is designed to make the process of waking up more comfortable, while being customizable to the customer’s needs. Choose between several modules (sold separately) to connect to the clock to tailor the morning experience just for you.</p>
+                        <a href="./products.html">
+                            <button type="button">LEARN MORE</button>
+                        </a>
+                    </div>
+                    
+                </div>
+    
+    
             </div>
-
-
-
-        </div>
-
-            
-        <button class="slide-arrow-div" id="right" >
-            <i class="fas fa-chevron-right"></i>
-        </button>
-
-    </section>
+    
+            <button class="slide-arrow-div" id="right">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+    
+        </section>
 
     <script src="./index.js"></script>
     <script>
@@ -94,8 +84,8 @@
         const productDescription = document.querySelector(".product-beskrivelse")
 
         const bilder = [
-        {"bilde": "./img/product2.png", "tittel": "Rise - add ons ", "beskrivelse":"Rise will in the future come up with different add-ons that fit exactly your needs. They are both simple and of more advanced nature. Like for example vibration plates, fans, smart light set up and sound system."},
-        {"bilde": "./img/product1.png", "tittel": "Rise - our newest collection", "beskrivelse":"The Rise Modular Alarm Clock is designed to make the process of waking up more comfortable, while being customizable to the customer’s needs. Choose between several modules (sold separately) to connect to the clock to tailor the morning experience just for you."}
+        {"bilde": "./img/slide2.png", "tittel": "Rise - add ons ", "beskrivelse":"Rise will in the future come up with different add-ons that fit exactly your needs. They are both simple and of more advanced nature. Like for example vibration plates, fans, smart light set up and sound system."},
+        {"bilde": "./img/slide1.png", "tittel": "Rise - our newest collection", "beskrivelse":"The Rise Modular Alarm Clock is designed to make the process of waking up more comfortable, while being customizable to the customer’s needs. Choose between several modules (sold separately) to connect to the clock to tailor the morning experience just for you."}
         
         ];
 
@@ -119,12 +109,12 @@
             //p1.style.backgroundImage = `linear-gradient(to bottom, rgb(86 79 95 / 64%),rgb(79 30 83 / 39%)),
             //url(${bakgrunn})`;  
 
-            produktContainer.src = bakgrunn
-            produktContainer.alt = "Product image of The Rise modular alarm clock"
+            //produktContainer.src = bakgrunn
+            //produktContainer.alt = "Product image of The Rise modular alarm clock"
             productName.innerHTML = bilder[i].tittel
             productDescription.innerHTML = bilder[i].beskrivelse
             
-            
+            p1.style.backgroundImage = `linear-gradient(rgba(86, 79, 95, 0.64), rgba(79, 30, 83, 0.39)), url(${bakgrunn})`;
             
             i++;
             
